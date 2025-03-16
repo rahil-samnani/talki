@@ -10,7 +10,6 @@ const { app, server } = require('./socket/index')
 app.use(cors({
     origin : process.env.FRONTEND_URL,
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-    allowedHeaders: ['Content-Type', 'auth-token'],
     credentials : true
 }))
 app.use(express.json())
